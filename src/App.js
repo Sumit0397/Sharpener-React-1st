@@ -26,10 +26,15 @@ function App() {
     },
   ];
 
+  const addExpensehandler = (expenses) =>{
+    console.log("in App.js");
+    console.log(expenses);
+  }
+
 
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpensehandler}/>
       <div className="expenses">
       
         {/* <ExpenseItem title={expenses[0].title}
